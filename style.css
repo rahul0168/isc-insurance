@@ -149,7 +149,7 @@ h6,
 
 
 
-.nav-link::after {
+.nav-link::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -163,8 +163,8 @@ h6,
 
 
 
-.nav-link:hover::after,
-.nav-link.active::after {
+.nav-link:hover::before,
+.nav-link.active::before {
     width: 100%;
 }
 
@@ -202,6 +202,18 @@ h6,
     color: var(--white);
     transform: translateY(-3px);
     box-shadow: 0 15px 30px rgba(12, 33, 57, 0.2);
+}
+
+.navbar.scrolled .custom-btn {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(209, 154, 34, 0.3);
+}
+
+.navbar.scrolled .custom-btn:hover {
+    background-color: var(--secondary-light);
+    border-color: var(--secondary-light);
+    box-shadow: 0 15px 30px rgba(209, 154, 34, 0.4);
 }
 
 .btn-outline-primary {
